@@ -1,0 +1,16 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/admin/aplikasi/page": "app/admin/aplikasi/page.js",
+  "/admin/jcc/page": "app/admin/jcc/page.js",
+  "/admin/page": "app/admin/page.js",
+  "/admin/pengguna/page": "app/admin/pengguna/page.js",
+  "/admin/spbe/page": "app/admin/spbe/page.js",
+  "/admin/tower/page": "app/admin/tower/page.js",
+  "/api/aplikasi/route": "app/api/aplikasi/route.js",
+  "/api/auth/login/route": "app/api/auth/login/route.js",
+  "/api/jcc/route": "app/api/jcc/route.js",
+  "/api/pengguna/route": "app/api/pengguna/route.js",
+  "/api/spbe/route": "app/api/spbe/route.js",
+  "/api/tower/route": "app/api/tower/route.js",
+  "/page": "app/page.js"
+}
