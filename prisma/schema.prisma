@@ -1,0 +1,54 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  username  String   @unique
+  password  String
+  role      String   @default("admin")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model DataAplikasiWebsite {
+  id          Int      @id @default(autoincrement())
+  name        String
+  description String?
+  url         String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model DataJCC {
+  id          Int      @id @default(autoincrement())
+  name        String
+  location    String?
+  status      String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model DataTower {
+  id          Int      @id @default(autoincrement())
+  name        String
+  height      Float?
+  location    String?
+  status      String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model DataSPBE {
+  id          Int      @id @default(autoincrement())
+  name        String
+  description String?
+  status      String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
